@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart UI - Distance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SMART UI</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-question-circle"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Smart Distance Tracking</h1>
+                <p>Track distances with precision and ease using our smart distance calculator.</p>
+                <button onclick="scrollToDistanceCalculator()">Start Tracking</button>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Our Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Customizability</h3>
+                        <p>Tailor the PC to your exact needs with extensive customization options.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Performance</h3>
+                        <p>Get optimal performance with state-of-the-art hardware and software configurations.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Warranty</h3>
+                        <p>Enjoy peace of mind with comprehensive warranty coverage on all components.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="distance-calculator" class="distance-calculator">
+            <div class="container">
+                <h2>Distance Calculator</h2>
+                <div class="input-group">
+                    <button onclick="getCurrentLocation()">Get Current Location</button>
+                    <div id="current-location" class="location-info"></div>
+                </div>
+                <div class="input-group">
+                    <label for="manual-location">Or enter your location manually:</label>
+                    <input type="text" id="manual-location" placeholder="Enter your location address">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="destination" placeholder="Enter destination address">
+                    <button onclick="calculateDistance()">Calculate Distance</button>
+                </div>
+                <div id="distance"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Smart UI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD16DzafgiwfS7fy_K1_Qj3QoAyzW3kQCE&libraries=places"></script>
+    <script src="script.js"></script>
+</body>
+</html>

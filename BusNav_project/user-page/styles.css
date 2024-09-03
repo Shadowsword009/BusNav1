@@ -1,0 +1,254 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    border-bottom: 2px solid #444;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #1e88e5;
+}
+
+header .actions a {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header .actions a:hover {
+    color: #1e88e5;
+    transform: scale(1.2);
+}
+
+/* Hero Section */
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url('images/bus4.jpeg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center; /* Ensure proper centering */
+    position: relative;
+}
+
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.hero button {
+    padding: 15px 25px;
+    background-color: #fff;
+    color: #1e88e5;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    max-width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #1e88e5;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.feature p {
+    font-size: 14px;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Distance Calculator Section */
+.distance-calculator {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.distance-calculator h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #1e88e5;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+}
+
+#distance {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e88e5;
+}
+
+.location-info {
+    font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+    from { transform: translateX(20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

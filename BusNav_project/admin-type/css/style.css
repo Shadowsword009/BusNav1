@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto; /* Center the container and add margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+.sidebar {
+  width: 15%;
+  padding: 20px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar li a:hover {
+  background-color: #eee;
+}
+
+.content {
+  width: 85%;
+  padding: 20px;
+}
+
+.content h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 70%;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center; /* Center the table horizontally */
+  align-items: center; /* Center the table vertically */
+  height: 60vh; /* Adjust height as needed to fit the viewport */
+}
+
+.table {
+  width: 100%;
+  max-width: 1000px; /* Set a maximum width for the table */
+  border-collapse: collapse;
+  background-image: url('https://example.com/path/to/your/background-image.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensure the image covers the table */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background to ensure text readability */
+}
+
+.table th {
+  background-color: #f0f0f0;
+}
+
+.table tr:hover {
+  background-color: #eee;
+}
+
+.add-new {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-header .profile {
+  display: flex;
+  align-items: center;
+}
+
+.top-header .profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.top-header .profile span {
+  font-weight: bold;
+}
+
+.profile-img {
+  width: 30px; /* Size of the profile image */
+  height: 30px;
+  border-radius: 50%;
+}

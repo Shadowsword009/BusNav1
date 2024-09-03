@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusNav Login</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to the CSS file -->
+    <style>
+        /* Inline styles for login page adjustments */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .login-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .login-box h1 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            color: #1e88e5;
+        }
+
+        .login-box .user-btns {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .login-box .user-btn {
+            background-color: #1e88e5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            flex: 1;
+            margin: 0 5px;
+        }
+
+        .login-box .user-btn.active {
+            background-color: #1565c0;
+        }
+
+        .login-box .user-btn:hover {
+            background-color: #0d47a1;
+            transform: translateY(-2px);
+        }
+
+        .login-box .login-panel {
+            display: none;
+        }
+
+        .login-box .login-panel input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-box .login-panel button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e88e5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .login-box .login-panel button:hover {
+            background-color: #1565c0;
+            transform: translateY(-2px);
+        }
+
+        .login-box .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #1e88e5;
+            text-decoration: none;
+        }
+
+        .login-box .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="title">BusNav</div>
+            <div class="user-btns">
+                <button class="user-btn" onclick="showLoginPanel('user')">User</button>
+                <button class="user-btn" onclick="showLoginPanel('driver')">Driver</button>
+                <button class="user-btn" onclick="showLoginPanel('admin')">Admin</button>
+            </div>
+            <div id="user-login" class="login-panel">
+                <input type="text" id="user-name" placeholder="Enter your name">
+                <button onclick="login()"><a href="user-page/index.html">Login</a></button>
+            </div>
+            <div id="driver-login" class="login-panel">
+                <input type="text" id="driver-id" placeholder="Employee ID">
+                <input type="password" id="driver-password" placeholder="Password">
+                <button onclick="login()">Login</button>
+            </div>
+            <div id="admin-login" class="login-panel">
+                <input type="text" id="admin-id" placeholder="Admin ID">
+                <input type="password" id="admin-password" placeholder="Password">
+                <button  onclick="login()"><a href="admin-type/employee-list.html">Login</a></button>
+            </div>
+            <a href="#" class="forgot-password" onclick="forgotPassword()">Forgot Password?</a>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
